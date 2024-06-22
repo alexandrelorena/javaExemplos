@@ -23,8 +23,8 @@ public class Estabelecimento {
 		
 		Almoxarife almoxarife = new Almoxarife();
 		//ações que não precisam estarem disponíveis para toda a aplicação
-		// almoxarife.controlarEntrada();
-		// almoxarife.controlarSaida();
+		almoxarife.controlarEntrada();
+		almoxarife.controlarSaida();
 		//ação que somente o seu pacote cozinha precisa conhecer (default)
 		// almoxarife.entregarIngredientes();
 		// almoxarife.trocarGas();
