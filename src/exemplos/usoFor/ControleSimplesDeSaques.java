@@ -14,7 +14,7 @@ public class ControleSimplesDeSaques {
         // Loop for para iterar sobre os saques
         for (int i = 1; ; i++) {
 
-            if (valorSaque == 0) {
+            if (valorSaque <= 0) {  
                 System.out.println("Transacoes encerradas.");
                 break; // Encerra o loop
             } else if (valorSaque > limiteDiario) {
@@ -22,7 +22,8 @@ public class ControleSimplesDeSaques {
                 break; // Encerra o loop
             } else {
                 System.out.println("Saque realizado. Limite restante: " + (limiteDiario - valorSaque) + "\nTransacoes encerradas.");
-                break;
+                System.out.println("Número de saques realizados: " + i);
+                // break;
             }
         }
         scanner.close(); // Fechar o scanner para evitar vazamentos de recursos
