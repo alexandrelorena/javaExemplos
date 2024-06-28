@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class GenericsExempleMap {
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) {
 		// Exemplo sem Generics
 		Map mapaSemGenerics = new HashMap();
